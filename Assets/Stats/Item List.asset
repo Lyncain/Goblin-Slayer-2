@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a9158ee770c4d4d8dd70cca7a0c75e, type: 3}
+  m_Name: Item List
+  m_EditorClassIdentifier: 
+  weapons:
+  - Info:
+      Image: {fileID: 21300000, guid: e41ce38b06b8d5940b81db0c4fa090f5, type: 3}
+      VName: "R\xECu"
+      EName: Axe
+      Object: {fileID: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+    MinDamage: 8
+    MaxDamage: 30
+    AtkRange: 2.25
+    ActionLimits: 3
+    CritChance: 30
+    AtkSpeed: 1
+    CritDamage: 1.8
+  - Info:
+      Image: {fileID: 21300000, guid: 9f8ea26d713b6de42a724f0d00c06f0e, type: 3}
+      VName: "Cu\u1ED1c chim"
+      EName: Pickaxe
+      Object: {fileID: 7636515419768425194, guid: 86f300ddabc78dd49957128d95638202, type: 3}
+      color: {r: 1, g: 1, b: 1, a: 1}
+    MinDamage: 10
+    MaxDamage: 40
+    AtkRange: 2.5
+    ActionLimits: 3
+    CritChance: 60
+    AtkSpeed: 0.85
+    CritDamage: 2.5
+  - Info:
+      Image: {fileID: 21300000, guid: e552f1ca2bab14246b5e350e9d29b5e5, type: 3}
+      VName: "Ki\u1EBFm ng\u1EAFn"
+      EName: Board sword
+      Object: {fileID: 3704718127577223648, guid: 00b2f1a256762d04a8cc6de180977274, type: 3}
+      color: {r: 1, g: 1, b: 1, a: 1}
+    MinDamage: 20
+    MaxDamage: 55
+    AtkRange: 2.75
+    ActionLimits: 6
+    CritChance: 50
+    AtkSpeed: 1.15
+    CritDamage: 2
+  - Info:
+      Image: {fileID: 21300000, guid: d84748e71c0b64849bd90b747eefce7b, type: 3}
+      VName: "Ki\u1EBFm d\xE0i"
+      EName: Long sword
+      Object: {fileID: 2547663788595398441, guid: 85a244d8962629f4783837dc35a752fe, type: 3}
+      color: {r: 1, g: 1, b: 1, a: 1}
+    MinDamage: 25
+    MaxDamage: 70
+    AtkRange: 3
+    ActionLimits: 6
+    CritChance: 55
+    AtkSpeed: 1.3
+    CritDamage: 2.25
+  items:
+  - Image: {fileID: 0}
+    VName: 
+    EName: 
+    Object: {fileID: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - Image: {fileID: 21300000, guid: 66393ddaf364b7a4c9e7581256d232f4, type: 3}
+    VName: "V\xE0ng"
+    EName: Gold
+    Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+    color: {r: 1, g: 1, b: 0, a: 1}
+  - Image: {fileID: 21300000, guid: 4f1e5890f74389f4a9e4f5c12fc1bd3d, type: 3}
+    VName: "B\xECnh m\xE1u"
+    EName: Health potion
+    Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - Image: {fileID: 21300000, guid: de903b206dbbde3489cbb2295182a239, type: 3}
+    VName: "Th\u1EC3 l\u1EF1c"
+    EName: Stamina
+    Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+    color: {r: 0, g: 1, b: 1, a: 1}

@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa057f2bea6b06428b3994d2a3047a0, type: 3}
+  m_Name: Achivement Lists
+  m_EditorClassIdentifier: 
+  achivements:
+  - Indext: 0
+    VName: "B\u1ECB \u0103n m\u1EA5t"
+    VInfor: "M\u1EA5t b\xE1nh !"
+    VComment: "B\xC1NHHHHH !!"
+    EName: Eated
+    EInfo: Lost the cake
+    EComment: PIEEEEE !!
+    Icon: {fileID: 21300000, guid: a7587f47f5b423448aab199c45932b20, type: 3}
+    TotalProgress: 1
+  - Indext: 1
+    VName: "L\xE0m b\xE1nh"
+    VInfor: "Ho\xE0n th\xE0nh c\u1ED1t truy\u1EC7n"
+    VComment: "Ta b\u1EAFt ch\xFAng l\xE0m b\xE1nh cho ta"
+    EName: Make pie
+    EInfo: Complete story mode
+    EComment: Me make them make pie for me
+    Icon: {fileID: 21300000, guid: bdbda4bd89d691d4eb9b472d48cff1c8, type: 3}
+    TotalProgress: 1
+  - Indext: 2
+    VName: "Mu\u1ED1n \u0111\u1ED1n c\u1EE7i hay g\xEC ?"
+    VInfor: "Gi\u1EBFt 200 qu\xE1i"
+    VComment: "\u0102n r\xECu \u0111i !"
+    EName: Lumberjack or what ?
+    EInfo: Kill 200 mobs
+    EComment: Eat this !
+    Icon: {fileID: 21300000, guid: e71ffdbcee06e274ea35363910c722e6, type: 3}
+    TotalProgress: 200
+  - Indext: 3
+    VName: "Mu\u1ED1n \u0111\xE0o m\u1ECF hay sao ?"
+    VInfor: "Gi\u1EBFt 400 qu\xE1i "
+    VComment: "\u0102n c\xFAp n\xE8 !"
+    EName: Miner or what ?
+    EInfo: Kill 400 mobs
+    EComment: Take that !
+    Icon: {fileID: 21300000, guid: 49596f4cf4c1ddf42a50e130c9c10c8c, type: 3}
+    TotalProgress: 400
+  - Indext: 4
+    VName: "CH\xC9M !"
+    VInfor: "Gi\u1EBFt 700 qu\xE1i "
+    VComment: "Ch\xE9m b\u1EEBa l\xE0 th\xE0nh chuy\xEAn nghi\u1EC7p"
+    EName: SLASH !
+    EInfo: Kill 700 mobs
+    EComment: Me no skill but me swing with skilled
+    Icon: {fileID: 21300000, guid: 0c5394c8b44a3e241a7f7dc58059c6e3, type: 3}
+    TotalProgress: 700
+  - Indext: 5
+    VName: "Ch\u1EB7t v\xE0 ch\xE9m"
+    VInfor: "Gi\u1EBFt 999 qu\xE1i "
+    VComment: "Ch\u1EDD ch\xFAt, ng\u01B0\u01A1i l\u1EA5y c\xE2y ki\u1EBFm \u1EDF
+      \u0111\xE2u \u0111\u1EA5y ?"
+    EName: Chop and slice
+    EInfo: Kill 999 mobs
+    EComment: Hold up, where did you get this ?
+    Icon: {fileID: 21300000, guid: 266cb7207c82b7847bea53ec91ee44cc, type: 3}
+    TotalProgress: 999
+  - Indext: 6
+    VName: "Nh\u1EA7y nh\u1EE5a v\xE0 nh\u1EDBp nh\xE1p"
+    VInfor: "Gi\u1EBFt 100 Slime"
+    VComment: "G\u1EDBm qu\xE1 ! h\xECnh nh\u01B0 ta nu\u1ED1t ph\u1EA3i m\u1ED9t
+      \xEDt r\u1ED3i !"
+    EName: Sticky and slimy
+    EInfo: Kill 100  Slime
+    EComment: Ugh ! I think some got in my mouth !
+    Icon: {fileID: 21300000, guid: d3c5af219b9f69e4a8224099c7f1ad6d, type: 3}
+    TotalProgress: 100
+  - Indext: 7
+    VName: "S\u1EF1 d\u1EC5 th\u01B0\u01A1ng c\xF9ng v\u1EDBi nguy hi\u1EC3m"
+    VInfor: "Gi\u1EBFt Slime \u0111\u1EB7c bi\u1EC7t"
+    VComment: "N\u1EBFu ta kh\xF4ng \u0111\xE1nh n\xF3 th\xEC n\xF3 c\xF3 \u0111\xE1nh
+      ta kh\xF4ng ?"
+    EName: Cuteness and deadly
+    EInfo: Kill a Special Slime
+    EComment: "If I didn\u2019t hit it will it hit me ?"
+    Icon: {fileID: 21300000, guid: 1a93f21ab15f1784db21d5663d22ca7e, type: 3}
+    TotalProgress: 1
+  - Indext: 8
+    VName: "K\u1EBB ph\u1EA3n di\u1EC7n"
+    VInfor: "Gi\u1EBFt 10 Slime \u0111\u1EB7c bi\u1EC7t"
+    VComment: "T\u1EA0I SAO ? TA GH\xC9T NG\u01AF\u01A0I !"
+    EName: The villain
+    EInfo: Kill 10 Special Slime
+    EComment: WHY ?! I HATE YOU !
+    Icon: {fileID: 21300000, guid: de08854341feb8c48904fa9e2e4fcceb, type: 3}
+    TotalProgress: 10
+  - Indext: 9
+    VName: "H\u1ECFng ph\xEDm"
+    VInfor: "S\u1EED d\u1EE5ng k\u1EF9 n\u0103ng 99 l\u1EA7n"
+    VComment: "B\xE0n ph\xEDm m\u1EDBi gi\xE1 bao nhi\xEAu nh\u1EC9 ?"
+    EName: Breaking Keyboard
+    EInfo: Spam skill 99 times
+    EComment: How much for the new keyboard ?
+    Icon: {fileID: 21300000, guid: 78fbe42b8ef0c38469217378dc843c5a, type: 3}
+    TotalProgress: 99
+  - Indext: 10
+    VName: "\u0110i \u0111\xEAm"
+    VInfor: "V\u01B0\u1EE3t qua 10 \u0111\u1EE3t qu\xE1i"
+    VComment: "Ta \u0111\xF3i"
+    EName: Night walk
+    EInfo: Survive 10 waves
+    EComment: Me hungry
+    Icon: {fileID: 21300000, guid: 26d5fb16b58af864db4e4c8650b23f06, type: 3}
+    TotalProgress: 10
+  - Indext: 11
+    VName: "Bu\u1ED3n ng\u1EE7 qu\xE1"
+    VInfor: "V\u01B0\u1EE3t qua 20 \u0111\u1EE3t qu\xE1i"
+    VComment: "Ta bu\u1ED3n ng\u1EE7"
+    EName: So sleepy
+    EInfo: Survive 20 waves
+    EComment: Me sleepy
+    Icon: {fileID: 21300000, guid: 964338bb939bf3b479503f9bacf2120a, type: 3}
+    TotalProgress: 20
+  - Indext: 12
+    VName: "\u0110\xE3 s\xE1ng ch\u01B0a ?"
+    VInfor: "V\u01B0\u1EE3t qua 30 \u0111\u1EE3t qu\xE1i"
+    VComment: "S\u1EAFp xong ch\u01B0a ?"
+    EName: Is it morning yet ?
+    EInfo: Survive 30 waves
+    EComment: Is it done yet ?
+    Icon: {fileID: 21300000, guid: 72881ff28326c024ab56571db6dbe0d6, type: 3}
+    TotalProgress: 30
+  - Indext: 13
+    VName: "T\xE0ng tr\u1EEF tr\xE1i ph\xE9p"
+    VInfor: "Nh\u1EB7t 9999 v\xE0ng"
+    VComment: "Nh\u01B0ng, \u0111i \u0111\xE2u \u0111\u1EC3 ti\xEAu x\xE0i ?"
+    EName: Illegal possesion
+    EInfo: Collect 9999 gold
+    EComment: But, where can I spend it ?
+    Icon: {fileID: 21300000, guid: 12e007d240f5d8644a0d518ac4ba49ed, type: 3}
+    TotalProgress: 9999
+  - Indext: 14
+    VName: "T\xE0ng tr\u1EEF ch\u1EA5t c\u1EA5m"
+    VInfor: "Nh\u1EB7t 9999 b\xECnh m\xE1u v\xE0 th\u1EC3 l\u1EF1c"
+    VComment: "\u0110i\u1EC1u n\xE0y l\xE0 h\u1EE3p ph\xE1p, \u0111\xFAng kh\xF4ng
+      ?"
+    EName: Drug Stonk
+    EInfo: Collect 9999 health and stamina pot
+    EComment: This is legal, right ?
+    Icon: {fileID: 21300000, guid: c9ad92a861b30624a86821d3cec8c387, type: 3}
+    TotalProgress: 9999
+  - Indext: 15
+    VName: Marshy boi
+    VInfor: "N\u1ED1c 100 b\xECnh m\xE1u !"
+    VComment: "Kh\u1ECFe m\u1EA1nh v\xE0 ph\xEA pha"
+    EName: Marshy boi
+    EInfo: Eat 100 health potion
+    EComment: Thanks man !
+    Icon: {fileID: 21300000, guid: 2ea659fd016e7a8468bedf238c5c5c6c, type: 3}
+    TotalProgress: 100

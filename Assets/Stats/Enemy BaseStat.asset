@@ -1,0 +1,546 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0f719bbaafed94c92c2e88f80d0c52, type: 3}
+  m_Name: Enemy BaseStat
+  m_EditorClassIdentifier: 
+  OGStats:
+  - name: Slime N
+    MinHealth: 40
+    MaxHealth: 80
+    MinSpeed: 0.8
+    MaxSpeed: 2
+    MinDmg: 2
+    MaxDmg: 7
+    MinScale: 0.8
+    MaxScale: 1
+    StopRange: 1.6
+    AttackRange: 2.5
+    AtkCD: 4
+    SkillCD: 0
+    SkillRange: 0
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 3
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 5
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 5
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Slime E
+    MinHealth: 500
+    MaxHealth: 1500
+    MinSpeed: 2.5
+    MaxSpeed: 3.5
+    MinDmg: 10
+    MaxDmg: 30
+    MinScale: 0.8
+    MaxScale: 1
+    StopRange: 1.8
+    AttackRange: 3
+    AtkCD: 1.5
+    SkillCD: 0
+    SkillRange: 0.1
+    itemDrop:
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 75
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 75
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+  - name: Goblin
+    MinHealth: 80
+    MaxHealth: 120
+    MinSpeed: 1.5
+    MaxSpeed: 2
+    MinDmg: 5
+    MaxDmg: 10
+    MinScale: 0.9
+    MaxScale: 1.2
+    StopRange: 1.8
+    AttackRange: 0.75
+    AtkCD: 2.5
+    SkillCD: 12
+    SkillRange: 8
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 50
+      MinAmount: 1
+      MaxAmount: 3
+      AmountPerItem: 3
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 10
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 10
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Orc
+    MinHealth: 250
+    MaxHealth: 400
+    MinSpeed: 1.5
+    MaxSpeed: 1.8
+    MinDmg: 10
+    MaxDmg: 20
+    MinScale: 0.9
+    MaxScale: 1.1
+    StopRange: 3
+    AttackRange: 1.8
+    AtkCD: 3.5
+    SkillCD: 10
+    SkillRange: 2.8
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 2
+      MaxAmount: 6
+      AmountPerItem: 4
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 10
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Skelleton
+    MinHealth: 50
+    MaxHealth: 100
+    MinSpeed: 1.5
+    MaxSpeed: 2
+    MinDmg: 5
+    MaxDmg: 15
+    MinScale: 1
+    MaxScale: 1.2
+    StopRange: 10
+    AttackRange: 0
+    AtkCD: 3.5
+    SkillCD: 0
+    SkillRange: 0
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 2
+      MaxAmount: 4
+      AmountPerItem: 4
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Roamer
+    MinHealth: 75
+    MaxHealth: 150
+    MinSpeed: 2.2
+    MaxSpeed: 2.6
+    MinDmg: 7
+    MaxDmg: 15
+    MinScale: 0.8
+    MaxScale: 0.9
+    StopRange: 7
+    AttackRange: 0
+    AtkCD: 3
+    SkillCD: 0
+    SkillRange: 0
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 1
+      MaxAmount: 4
+      AmountPerItem: 6
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 20
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 20
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Knight
+    MinHealth: 400
+    MaxHealth: 700
+    MinSpeed: 2
+    MaxSpeed: 2.2
+    MinDmg: 10
+    MaxDmg: 25
+    MinScale: 1
+    MaxScale: 1.05
+    StopRange: 2.2
+    AttackRange: 1
+    AtkCD: 1.8
+    SkillCD: 9999
+    SkillRange: 0.1
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 4
+      MaxAmount: 9
+      AmountPerItem: 6
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Elf
+    MinHealth: 350
+    MaxHealth: 650
+    MinSpeed: 3.6
+    MaxSpeed: 3.8
+    MinDmg: 15
+    MaxDmg: 30
+    MinScale: 1.1
+    MaxScale: 1.2
+    StopRange: 1.8
+    AttackRange: 1.2
+    AtkCD: 1.5
+    SkillCD: 16
+    SkillRange: 7
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 2
+      MaxAmount: 7
+      AmountPerItem: 9
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 20
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+  - name: Wood
+    MinHealth: 500
+    MaxHealth: 1000
+    MinSpeed: 1.2
+    MaxSpeed: 2.1
+    MinDmg: 15
+    MaxDmg: 35
+    MinScale: 0.7
+    MaxScale: 0.85
+    StopRange: 2
+    AttackRange: 1
+    AtkCD: 2
+    SkillCD: 8
+    SkillRange: 1.5
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 80
+      MinAmount: 2
+      MaxAmount: 5
+      AmountPerItem: 10
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  UseStats:
+  - name: Slime N
+    MinHealth: 40
+    MaxHealth: 80
+    MinSpeed: 0.8
+    MaxSpeed: 2
+    MinDmg: 2
+    MaxDmg: 7
+    MinScale: 0.8
+    MaxScale: 1
+    StopRange: 1.6
+    AttackRange: 2.5
+    AtkCD: 4
+    SkillCD: 0
+    SkillRange: 0
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 3
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 5
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 5
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Slime E
+    MinHealth: 500
+    MaxHealth: 1500
+    MinSpeed: 2.5
+    MaxSpeed: 3.5
+    MinDmg: 10
+    MaxDmg: 30
+    MinScale: 0.8
+    MaxScale: 1
+    StopRange: 1.8
+    AttackRange: 3
+    AtkCD: 1.5
+    SkillCD: 0
+    SkillRange: 0.1
+    itemDrop:
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 75
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 75
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+  - name: Goblin
+    MinHealth: 80
+    MaxHealth: 120
+    MinSpeed: 1.5
+    MaxSpeed: 2
+    MinDmg: 5
+    MaxDmg: 10
+    MinScale: 0.9
+    MaxScale: 1.2
+    StopRange: 1.8
+    AttackRange: 0.75
+    AtkCD: 2.5
+    SkillCD: 12
+    SkillRange: 8
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 50
+      MinAmount: 1
+      MaxAmount: 3
+      AmountPerItem: 3
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 10
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 10
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Orc
+    MinHealth: 250
+    MaxHealth: 400
+    MinSpeed: 1.5
+    MaxSpeed: 1.8
+    MinDmg: 10
+    MaxDmg: 20
+    MinScale: 0.9
+    MaxScale: 1.1
+    StopRange: 3
+    AttackRange: 1.8
+    AtkCD: 3.5
+    SkillCD: 10
+    SkillRange: 2.8
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 2
+      MaxAmount: 6
+      AmountPerItem: 4
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 10
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Skelleton
+    MinHealth: 50
+    MaxHealth: 100
+    MinSpeed: 1.5
+    MaxSpeed: 2
+    MinDmg: 5
+    MaxDmg: 15
+    MinScale: 1
+    MaxScale: 1.2
+    StopRange: 10
+    AttackRange: 0
+    AtkCD: 3.5
+    SkillCD: 0
+    SkillRange: 0
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 2
+      MaxAmount: 4
+      AmountPerItem: 4
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Roamer
+    MinHealth: 75
+    MaxHealth: 150
+    MinSpeed: 2.2
+    MaxSpeed: 2.6
+    MinDmg: 7
+    MaxDmg: 15
+    MinScale: 0.8
+    MaxScale: 0.9
+    StopRange: 7
+    AttackRange: 0
+    AtkCD: 3
+    SkillCD: 0
+    SkillRange: 0
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 1
+      MaxAmount: 4
+      AmountPerItem: 6
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 20
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 20
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Knight
+    MinHealth: 400
+    MaxHealth: 700
+    MinSpeed: 2
+    MaxSpeed: 2.2
+    MinDmg: 10
+    MaxDmg: 25
+    MinScale: 1
+    MaxScale: 1.05
+    StopRange: 2.2
+    AttackRange: 1
+    AtkCD: 1.8
+    SkillCD: 9999
+    SkillRange: 0.1
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 4
+      MaxAmount: 9
+      AmountPerItem: 6
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+  - name: Elf
+    MinHealth: 350
+    MaxHealth: 650
+    MinSpeed: 3.6
+    MaxSpeed: 3.8
+    MinDmg: 15
+    MaxDmg: 30
+    MinScale: 1.1
+    MaxScale: 1.2
+    StopRange: 1.8
+    AttackRange: 1.2
+    AtkCD: 1.5
+    SkillCD: 16
+    SkillRange: 7
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 75
+      MinAmount: 2
+      MaxAmount: 7
+      AmountPerItem: 9
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 15
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 20
+      MinAmount: 1
+      MaxAmount: 2
+      AmountPerItem: 1
+  - name: Wood
+    MinHealth: 500
+    MaxHealth: 1000
+    MinSpeed: 1.2
+    MaxSpeed: 2.1
+    MinDmg: 15
+    MaxDmg: 35
+    MinScale: 0.7
+    MaxScale: 0.85
+    StopRange: 2
+    AttackRange: 1
+    AtkCD: 2
+    SkillCD: 8
+    SkillRange: 1.5
+    itemDrop:
+    - Object: {fileID: 7725975081509106868, guid: 0283a5816fb79414e894855e8218caa3, type: 3}
+      Rate: 80
+      MinAmount: 2
+      MaxAmount: 5
+      AmountPerItem: 10
+    - Object: {fileID: 5051662365453586807, guid: faa867e6b9e6d624fa3c4821802389e6, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
+    - Object: {fileID: 6783453361867101080, guid: e240e55de5f2b9343a11f53391babca0, type: 3}
+      Rate: 25
+      MinAmount: 1
+      MaxAmount: 1
+      AmountPerItem: 1
